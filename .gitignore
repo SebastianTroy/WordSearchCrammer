@@ -1,10 +1,21 @@
+# =========================
+# Custom
+# =========================
+*.project
+*.classpath
+*.fxbuild
+*.settings
+bin
+
+# =========================
+# Generated
+# =========================
 *.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 

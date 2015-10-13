@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="troy.UserInterface">
+   <children>
+      <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <VBox layoutX="3.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Size" />
+                        <Slider fx:id="sizeSlider" blockIncrement="1.0" majorTickUnit="5.0" max="20.0" min="5.0" minorTickCount="5" onMouseReleased="#onSizeSliderUsed" onScrollFinished="#onSizeSliderUsed" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="8.0" />
+                        <HBox spacing="30.0">
+                           <children>
+                              <Button fx:id="startButton" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#onBeginPressed" text="Begin" />
+                              <Button fx:id="stopButton" disable="true" mnemonicParsing="false" onAction="#onEndPressed" text="Stop" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="9.0">
+                           <children>
+                              <Label text="Generations:" />
+                              <Label fx:id="generationsLabel" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="9.0">
+                           <children>
+                              <Label text="Improvements:" />
+                              <Label fx:id="improvementsLabel" text="Label" />
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <ListView fx:id="wordList" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <GridPane fx:id="resultsTable" gridLinesVisible="true" onDragDone="#onSizeSliderUsed" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
